@@ -5,9 +5,8 @@ print('\u001b[32mWelcome to Offline Password Generator.\nTo stop at any point ju
 
 autoKeys = ['auto', 'automatic', 'a']
 mKeys = ['m', 'manual', 'man'] 
-auto = input ('\u001b[0m'+'Automatic Process or Manual? a/m: ') 
-
-if auto.lower() in autoKeys:
+auto = input ('\u001b[0m'+'Automatic Process or Manual? A/M | Default is Automatic: ') 
+if auto.lower() in autoKeys or not auto.lower():
     length = 18
     included = string.ascii_letters + string.digits + '!@#$%^&*()'
     random.seed = (os.urandom(2048))
