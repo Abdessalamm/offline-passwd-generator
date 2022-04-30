@@ -20,7 +20,7 @@ elif auto.lower() in mKeys:
     length = '18'
      
  splcar = input('What special characters to include? like !@#$%^&*() leave empty if none: ')
- yKeys = ['y', 'Y', 'Yes', 'YES', 'yes']
+ yKeys = ['y', 'yes']
  letters = input('Include letters? Yes/No: ')
  nums = input ('Include Numbers? Yes/No: ')
 
